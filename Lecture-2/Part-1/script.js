@@ -6,7 +6,9 @@
 // 3. str.toUpperCase();            //Upper Case
 // 4. str.indexOf();                //IndexOf   ---> Find string
 // 5. str.trim().toUpperCase();     //Chaining
-// 6. str.slice()                   //Slice     --->Cut 
+// 6. str.slice().                  //Slice     --->Cut 
+// 7. str.slice("love","do");       //Replace  
+// 8. str.repeat(8);                //Repeat
 
 
 
@@ -56,7 +58,7 @@
 // slice()
 
 // let str = "HelloWorld!";
-// console.log(str.slice(0,5));
+// console.log(str.slice(0, 5));
 // console.log(str.slice(5,11));                //OR
 // console.log(str.slice(5, str.length));       //OR
 // console.log(str.slice(5));  
@@ -68,7 +70,36 @@
 
 // replace()
 
-let str = "ILoveCoding";
+// let str = "ILoveCoding";
 // console.log(str.slice("Love","do"));
 
 
+//repeat()
+
+// let str = "ILoveCoding";
+// str.repeat(5);
+
+
+
+        // Question Set...
+
+
+// Q-1. trim and uppercase
+
+// let msg = "help!";
+// console.log(msg.trim().toUpperCase());
+
+
+// Q-2. slice, indexOf, replace
+
+// let name = "ApnaCollege";
+// name.slice(4,9);
+// name.indexOf("na");
+// name.replace("Apna","Our");
+
+
+// Q-3. 
+
+let fullName = "ApnaCollege";
+// fullName.slice(4).replace('l','t');
+fullName.slice(4).replace('l','t').replace('l','t');
