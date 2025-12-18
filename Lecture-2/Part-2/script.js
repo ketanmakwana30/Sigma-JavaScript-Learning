@@ -37,15 +37,40 @@
 // car.includes("xuv");                    //includes
 
 
-let primary = ["red","green","blue"];
-let secondary = ["white","black","yellow"];
+// let primary = ["red","green","blue"];
+// let secondary = ["white","black","yellow"];
 
-primary.concat(secondary);                  //concat
-primary.reverse();                          //reverse
+// primary.concat(secondary);                  //concat
+// primary.reverse();                          //reverse
+
+
+// let colors = ['blue', 'green', 'red', 'gray', 'black'];
+
+// colors.slice(2);                           //slice
+// colors.slice(3,colors.length);
+// colors.slice(1,3);
+// colors.slice(-2);
+
+
+// let colors = ['blue', 'green', 'red', 'gray', 'black','white'];
+
+// colors.splice(5);                               //start     
+// colors.splice(0,2);                             //start, delete
+// colors.splice(0, 0, "yellow","pink");           //start, delete, add yellow & pink
+// colors.splice(1, 0, "lightpink");               //start,NO delete, add after blue -lightpink    
+
+
+// let colors = ['blue', 'green', 'red', 'gray', 'black','white'];         //sort
+// console.log(colors.sort());
+
+// let num = [20,23,54,34,40,100];                                         //sort number
+// console.log(num.sort());
 
 
 
-//      Practice Question set
+
+
+//    1.  Practice Question set
 
 // let months = ["january", "july","march","august"];
 
@@ -53,3 +78,13 @@ primary.reverse();                          //reverse
 // months.shift();                         
 // months.unshift("june");                 //unshift  
 // months.unshift("july"); 
+
+
+//   2.  Practice Question set 
+
+// let months = ["january", "july","march","august"];
+// console.log(months.splice(0,2, "july","june"));
+
+// let lang = ["c","c++","html","javascript","python","java","c#"];
+// lang.push("sql");
+// console.log(lang.reverse().indexOf("javascript"));
