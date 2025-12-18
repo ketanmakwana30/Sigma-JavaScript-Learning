@@ -67,6 +67,25 @@
 // console.log(num.sort());
 
 
+    //Array references
+
+//  let arr = ['a','b'];
+//  let arrCopy = arr;
+//  arr.push('c');
+
+    //Constant Array
+
+// const num = [1,3,4,5];
+// num.push(7);
+// num.pop(4);
+
+
+    //Nested Array
+
+// const number = [  [2, 3], [4, 5], [6, 7] ] ;
+ 
+
+
 
 
 
@@ -88,3 +107,9 @@
 // let lang = ["c","c++","html","javascript","python","java","c#"];
 // lang.push("sql");
 // console.log(lang.reverse().indexOf("javascript"));
+
+
+
+// 3. tic-tac-toe game
+
+let game = [ ["X", null, "O"], [null, "X", null], ["O", null, "X"] ];
