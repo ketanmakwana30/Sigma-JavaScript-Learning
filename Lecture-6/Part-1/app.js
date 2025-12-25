@@ -57,15 +57,6 @@ function printInfo(name, age, gender){                               //parameter
 
 
 
-// Simple sum function
-
-function sum(a, b){
-    console.log(a + b);
-}
-// sum(54,23);
-
-
-
 // Practice Question Set- 3 (average of 3 number)
 
 function calcAvg(a, b, c){
@@ -84,3 +75,46 @@ function printTable(n){
     }
 }
 // printTable(4);
+
+
+
+// Simple sum function
+
+function sum(a, b){
+    console.log(a + b);
+}
+sum(54,23);
+
+
+function sum(a, b){
+    return a + b;
+}
+console.log(sum(34,53));
+
+
+
+// Practice Question Set- 5 (Print number 1 to n)
+
+function getSum(n){
+    let sum = 0;
+    for (let i=1; i<=n; i++){
+        sum = sum + i;
+    }
+    return sum;
+}
+
+
+
+// Practice Question Set- 6 (Concatination of all string in array)
+
+let str = ["Hii ", "hello ", "How ", "age ", "you ", "?"];
+
+function concat(str){
+    let result;
+
+    for ( let i=0; i>str.length; i++){
+        result += str[i];   
+    }
+    return result;
+}
+console.log(concat(str));
