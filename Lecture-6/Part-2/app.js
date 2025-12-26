@@ -3,13 +3,13 @@ let sum = 80;                   //Global scope
 
 
 
-function calcSum(a, b){
+function calcSum(a, b) {
     let sum = a + b;            //Function scope       
     console.log(sum);
 }
 // console.log(sum);            // Not Accessible in outside
 
-calcSum(4,6);       
+calcSum(4, 6);
 console.log(sum);
 
 
@@ -25,11 +25,11 @@ console.log(sum);
 
 // Nested Function          //Lexical Scope 
 
-function outerFunc(){
+function outerFunc() {
 
     let x = 12;
     let y = 10;
-    function innerFunc(){       //Function scope
+    function innerFunc() {       //Function scope
         let a = 20;
         console.log(x);
         console.log(y);
@@ -37,7 +37,7 @@ function outerFunc(){
     // let x = 12;                 //Hoisting
     // let y = 10;
     // console.log(a);          // NOT Possible inner variable (Possitive is NOT true)
-    
+
     innerFunc();
 }
 // outerFunc();
@@ -49,10 +49,10 @@ function outerFunc(){
 
 let greet = "hello";                //Global scope
 
-function changeGreet(){
+function changeGreet() {
     let greet = "Namaste!";         //Function scope
     console.log(greet);
-    function innerGreet(){
+    function innerGreet() {
         console.log(greet);         //Lexical scope
     }
     innerGreet();       //namaste!
@@ -65,22 +65,56 @@ changeGreet();          //namaste!
 
 // Function Expression 
 
-const calSum = function(a,b){
-    return a+b;
+const calSum = function (a, b) {
+    return a + b;
 }
-console.log(calSum(4,6));
+console.log(calSum(4, 6));
 
 
 
 
 // Higher order function
 
-function multipleGreet(func, count){
-    for(let i=1; i<=20; i++){
+function multipleGreet(func, count) {
+    for (let i = 1; i <= 20; i++) {
         func();
     }
 }
-let greet1 = function(){
+let greet1 = function () {
     console.log("Hello!");
 }
-multipleGreet(greet1, 5)
+multipleGreet(greet1, 5);
+
+
+
+//Hifher order function - return
+
+let odd = function (n) {
+    console.log(!(n % 2 == 0));
+}
+
+let even = function (n) {
+    console.log(n % 2 == 0);
+}
+
+
+//Factory Function
+
+function evenOrOddFactory(request) {
+    if (request == "odd") {
+        let odd = function (n) {
+            console.log(!(n % 2 == 0));
+        }
+        return odd;
+    } else if (request == "even") {
+        let even = function (n) {
+            console.log(n % 2 == 0);
+        }
+        return even;
+    }else{
+        console.log("Wrong request");
+        
+    }
+}
+
+let request = "odd"; //even
