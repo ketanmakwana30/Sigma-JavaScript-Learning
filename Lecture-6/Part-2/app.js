@@ -87,7 +87,7 @@ multipleGreet(greet1, 5);
 
 
 
-//Hifher order function - return
+//Higher order function - return
 
 let odd = function (n) {
     console.log(!(n % 2 == 0));
@@ -101,20 +101,54 @@ let even = function (n) {
 //Factory Function
 
 function evenOrOddFactory(request) {
+
     if (request == "odd") {
-        let odd = function (n) {
+        return odd = function (n) {
             console.log(!(n % 2 == 0));
         }
-        return odd;
-    } else if (request == "even") {
-        let even = function (n) {
+    }
+    else if (request == "even") {
+        return even = function (n) {
             console.log(n % 2 == 0);
         }
-        return even;
-    }else{
+    }
+    else {
         console.log("Wrong request");
-        
     }
 }
 
-let request = "odd"; //even
+let request = "even"; //even
+// console.log(request);
+
+
+
+// Methods on objects Example
+
+const calculater = {
+    add: function(a, b) {
+        return a + b;
+    },
+    sub: function(a, b){
+        return a - b;
+    },
+    mul: function(a, b){
+        return a * b;
+    }
+};
+
+console.log(calculater.mul(3,10));
+
+
+// Shorthand Method
+const calc = {
+    add(a, b){
+        return a + b;
+    },
+    sub(a, b){
+        return a - b;
+    },
+    mul(a, b){
+        return a * b;
+    }
+};
+console.log(calc.add(20,5));
