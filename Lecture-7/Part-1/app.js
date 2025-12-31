@@ -14,6 +14,7 @@ const student = {
 }
 
 
+
 // Try & catch statement
 
 console.log("hello!");
@@ -21,10 +22,11 @@ console.log("hello!");
 try{
     console.log(a);
 } catch(err) {
-    console.log("Error: a is not defined");
-    console.log(err);
+    // console.log("Error: a is not defined");
+    // console.log(err);
 }
-console.log("hello!");
+// console.log("hello!");
+
 
 
 // Arrow function
@@ -32,4 +34,18 @@ console.log("hello!");
 const sum = (a, b) => {
     return a+b;
 };
-console.log(sum(5,7));
+// console.log(sum(5,7));
+
+
+//Cube with arrow function
+const cube = (a) => {
+    return a*a*a;
+}
+
+//Power with arrow function
+const pow = (a, b) => {
+    return a**b;
+}
+
+// Implicit return 
+const mul = (a, b) => (a*b);
