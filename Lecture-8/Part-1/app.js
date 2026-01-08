@@ -57,31 +57,61 @@ let square = arr.map( (el) => {             //map method
 
 // filter method
 
-let nums = [1, 2, 3, 4, 5, 8, 9, 10];
+// let nums = [1, 2, 3, 4, 5, 8, 9, 10];
 
-let even = nums.filter( (el) => {
-    return el % 2 == 0 ;
-});
-console.log(even);
+// let even = nums.filter( (el) => {
+//     return el % 2 == 0 ;
+// });
+// console.log(even);
 
 
 
 //every method
 
-nums = [2, 4, 6, 10];
-let checkEvery = nums.every( (el) => (el%2 == 0));
-console.log(checkEvery);                               //ture
+// nums = [2, 4, 6, 10];
+// let checkEvery = nums.every( (el) => (el%2 == 0));
+// console.log(checkEvery);                               //ture
 
 
 
 // some method
 
-nums = [1, 3, 5, 6];
+// nums = [1, 3, 5, 6];
 
-let checkSome = nums.some( (el) => (el%2 == 0));
-console.log(checkSome);                               //ture
+// let checkSome = nums.some( (el) => (el%2 == 0));
+// console.log(checkSome);                               //ture
 
 
 
 //reduce method
 
+// let checkReduce = [1, 4, 5, 6, 7, 8, 14];
+// let newReduce = checkReduce.reduce( function (res, el) {
+//     return (res + el)
+// });
+// console.log(newReduce);
+
+
+
+// maximum value using reduce
+
+let maxArr = [1, 5, 3, 6, 7, 100, 100, 49, 30, 23, 63, 34, 32, 12];
+
+// let max = 0;
+
+// for(let i=0; i < maxArr.length; i++){
+//     if(max < maxArr[i]){
+//         max = maxArr[i];
+//     }
+// };
+// console.log(max);
+
+
+let findMax = maxArr.reduce( (max, el) => { 
+        if(el > max){
+                return el;
+    }else{
+            return max;
+        }
+    });
+    console.log(findMax);
