@@ -43,9 +43,10 @@ let heading = document.querySelector("h1");
 heading.innerHTML = `<u>${heading.innerText}</u>`;
 
 
+
 // Manipulating Attributes
 
 let image = document.querySelector("img");
-
+ 
 image.getAttribute('id');                   // Getter   ( Use getAttribute )
 image.setAttribute('id', 'spiderman');      // Setter   ( Use SetAttribute )
