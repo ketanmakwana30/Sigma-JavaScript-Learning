@@ -50,3 +50,19 @@ let image = document.querySelector("img");
  
 image.getAttribute('id');                   // Getter   ( Use getAttribute )
 image.setAttribute('id', 'spiderman');      // Setter   ( Use SetAttribute )
+
+
+let linkEl = document.querySelectorAll('.box a');
+// linkEl.style.color = "yellow";
+
+// for (a of linkEl){
+//     a.style.color = "chocolate"; 
+// }
+
+// linkEl.forEach(a => {
+//     a.style.color = "red"; 
+// });
+
+for(let i = 0; i < linkEl.length; i++){
+    linkEl[i].style.color = "red";
+}
