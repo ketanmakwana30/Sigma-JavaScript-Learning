@@ -61,7 +61,7 @@ let linkEl = document.querySelectorAll('.box a');
 
 // linkEl.forEach(a => {
 //     a.style.color = "red"; 
-// });
+// });  
 
 for(let i = 0; i < linkEl.length; i++){
     linkEl[i].style.color = "red";
