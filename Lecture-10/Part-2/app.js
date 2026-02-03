@@ -1,16 +1,15 @@
-const box = document.querySelector(".box");
-const para = document.querySelector("p");
-const h3 = document.querySelector("h3");
 const btn = document.querySelector("button");
+const inp = document.querySelector("#non");
 
 
-para.addEventListener("click", () => {
-    console.log("hello"); 
-});
+// const box = document.querySelector(".box");
+// const para = document.querySelector("p");
+// const h3 = document.querySelector("h3");
 
-box.addEventListener("mouseover", () => {
-    console.log("mouse inside box"); 
-});
+
+// box.addEventListener("mouseover", () => {        // Mouse Events
+//     console.log("mouse inside box"); 
+// });
 
 
 
@@ -23,10 +22,40 @@ box.addEventListener("mouseover", () => {
 //     this.style.backgroundColor = "blue", this.style.color = "white";
 // });
 
-function changeColor() {
-    this.style.backgroundColor = "blue";
-}
+// function changeColor() {
+//     this.style.backgroundColor = "blue";
+// }
 
-para.addEventListener("click", changeColor);
-btn.addEventListener("click", changeColor);
-h3.addEventListener("click", changeColor);
+// para.addEventListener("click", changeColor);             // Mouse Events
+// btn.addEventListener("click", changeColor);              // Mouse Events
+// h3.addEventListener("click", changeColor);               // Mouse Events
+
+btn.addEventListener("click", function (evt) {              // Mouse Events
+    console.log(evt);
+    console.log("Hello");
+});
+
+
+// inp.addEventListener("keydown", () => {
+//     console.log("key Released");
+// });
+
+
+// inp.addEventListener("keydown", (event) => {
+//     console.log("Key = ",event.key);
+//     console.log("Code = ",event.code);
+// });
+
+
+inp.addEventListener("keydown", (event) => {
+    console.log("Code = ",event.code);
+    if (event.code == "ArrowUp"){
+        console.log("Element Move Up");
+    } else if (event.code == "ArrowDown"){
+        console.log("Element Move Doun");
+    }else if (event.code == "ArrowLeft"){
+        console.log("Element Move Left");
+    }else if (event.code == "ArrowRight"){
+        console.log("Element Move Right");
+    }
+});
