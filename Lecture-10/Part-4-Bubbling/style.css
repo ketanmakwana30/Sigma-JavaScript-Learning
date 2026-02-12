@@ -1,0 +1,13 @@
+.container {
+    height: 400px;
+    width: 700px;
+    background-color: pink;
+}
+
+ul{
+    background-color: gray;
+}
+
+li {
+    background-color: green;
+}
